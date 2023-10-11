@@ -12,7 +12,7 @@ module.exports = {
     rules: {
         'no-console': 'off',
         'quotes': ['error', 'single'],
-        'comma-dangle': ['error', 'always-multiline'],
+        'comma-dangle': ['error', 'only-multiline'],
         'space-before-function-paren': ['error', 'never'],
         'no-unused-vars': ['error', {'args': 'after-used'}],
         'object-curly-spacing': ['error', 'always'],
@@ -30,4 +30,14 @@ module.exports = {
         'vue/object-curly-spacing': ['error', 'always'],
         'vue/max-attributes-per-line': ['error', {'singleline': {'max': 1}, 'multiline': {'max': 1}}],
     },
+    overrides: [
+        {
+            files: ['*.js', '*.ts'],
+            excludedFiles: ['*.vue'],
+            rules: {
+                'indent': ['error', 4],
+                '@typescript-eslint/indent': ['error', 4]
+            }
+        }
+    ]
 }
