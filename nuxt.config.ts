@@ -8,5 +8,10 @@ export default defineNuxtConfig({
     '@pinia/nuxt', // https://pinia.vuejs.org/ssr/nuxt.html#nuxt-js
     '@vueuse/nuxt', // https://vueuse.org/nuxt/README.html
     'nuxt-icon', // https://nuxt.com/modules/icon
-  ]
+    '@nuxtjs/eslint-module', // https://nuxt.com/modules/eslint
+  ],
+  eslint: {
+    lintOnStart: false,
+    include: ['src/**/*.{js,ts,vue}'],
+  },
 })

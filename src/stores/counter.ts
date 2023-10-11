@@ -2,8 +2,8 @@ import { Ref, ref } from 'vue'
 import { defineStore } from 'pinia'
 
 interface CounterState {
-    n: number
-    myRef: Ref<string>
+n: number
+myRef: Ref<string>
 }
 
 export const useCounter = defineStore('counter', {

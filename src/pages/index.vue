@@ -3,9 +3,12 @@
 </script>
 
 <template>
-  <div>
-    <NuxtWelcome />
-  </div>
+    <div>
+        <p class="font-bold font-serif">
+            Olá mundo
+        </p>
+        <NuxtWelcome />
+    </div>
 </template>
 
 <style scoped>
