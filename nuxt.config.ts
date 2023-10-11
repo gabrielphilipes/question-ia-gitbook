@@ -7,5 +7,6 @@ export default defineNuxtConfig({
     'nuxt-headlessui', // https://nuxt.com/modules/headlessui
     '@pinia/nuxt', // https://pinia.vuejs.org/ssr/nuxt.html#nuxt-js
     '@vueuse/nuxt', // https://vueuse.org/nuxt/README.html
+    'nuxt-icon', // https://nuxt.com/modules/icon
   ]
 })
