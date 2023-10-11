@@ -6,5 +6,6 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss', // https://nuxt.com/modules/tailwindcss
     'nuxt-headlessui', // https://nuxt.com/modules/headlessui
     '@pinia/nuxt', // https://pinia.vuejs.org/ssr/nuxt.html#nuxt-js
+    '@vueuse/nuxt', // https://vueuse.org/nuxt/README.html
   ]
 })
