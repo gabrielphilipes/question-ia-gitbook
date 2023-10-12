@@ -1,11 +1,14 @@
 <script setup lang="ts">
-    const msg = 'Hello World!'
 </script>
 
 <template>
     <div>
         <p class="font-bold font-serif">
-            {{ msg }}
+            {{ text('welcome') }}
+        </p>
+
+        <p class="font-bold font-serif">
+            {{ text('homePage') }}
         </p>
         <NuxtWelcome />
     </div>
