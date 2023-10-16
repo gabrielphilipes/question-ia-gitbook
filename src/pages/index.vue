@@ -1,17 +1,13 @@
 <script setup lang="ts">
+    import { useChatStore } from '~/stores/chat'
+
+    const store = useChatStore()
 </script>
 
 <template>
-    <div>
-        <p class="font-bold font-serif">
-            {{ text('welcome') }}
-        </p>
+    <ChatButton v-if="!store.showChat" />
 
-        <p class="font-bold font-serif">
-            {{ text('homePage') }}
-        </p>
-        <NuxtWelcome />
-    </div>
+    <ChatBox v-if="store.showChat" />
 </template>
 
 <style scoped>
